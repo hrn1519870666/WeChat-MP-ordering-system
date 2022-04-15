@@ -1,5 +1,6 @@
 # WeChat-MP-ordering-system
 微信公众号点餐系统-Java后端-个人项目
+
 关键技术：SpringBoot、分布式session、Redis分布式锁、Redis缓存层、微信网页授权
 
 项目描述：
