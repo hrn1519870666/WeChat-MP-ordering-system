@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/sell?characterEncoding=utf-8&useSSL=false
+
+  #  控制台输出sql
+  jpa:
+    show-sql: true
+
+  #  只显示非空字段
+  jackson:
+    default-property-inclusion: non_null
+
+  redis:
+    host: 192.168.100.12
+    port: 6379
+
+#    url的前缀，项目打包的名字
+server:
+  context-path: /sell
+
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+##  path: /var/log/tomcat/
+#  file: /var/log/tomcat/sell.log
+#  level:
+#    com.imooc.LoggerTest: debug
+
+wechat:
+  mpAppId: wx733527c560333355
+  mpAppSecret: 5dd88c7410dd46899a2f30d1df917b71
+
+
+projectUrl:
+  wechatMpAuthorize: http://hrnsell.natapp1.cc
+  wechatOpenAuthorize: http://hrnsell.natapp1.cc
+  sell: http://hrnsell.natapp1.cc
