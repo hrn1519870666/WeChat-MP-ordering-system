@@ -65,6 +65,7 @@ public class SecondKillServiceImpl implements SecondKillService {
     public void orderProductMockDiffUserByRedis(String productId) {
         //1. 加Redis分布式锁
         long time = System.currentTimeMillis() + TIMEOUT;
+        // lock和unlock的参数是一样的:productId,time
         if(!redisLock.lock(productId,String.valueOf(time))){
             //加锁失败
             throw new SellException(101,"哎呦喂，人也太多了，还个姿势再试试~~~");
